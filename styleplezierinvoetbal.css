@@ -1,0 +1,147 @@
+body {
+	padding: 104px 0 0 0;
+	margin: 0px;
+}
+h1 {
+	color: black;
+	font-family: Verdana;
+	position: relative;
+	margin-left: 30px;
+	margin-bottom: 15px;
+}
+
+p {
+	color: black;
+	font-family: Verdana;
+	position: relative;
+	margin-left: 30px;
+	margin-bottom: 15px;
+}
+.header {
+	background-color: #1e73be;
+	width: 100%;
+	height: 68 px;
+	padding: 0px;
+	position: fixed;
+	top: 0px;
+}
+.space {
+	width: 100%;
+	height: 400px;
+	position: fixed;
+	margin: 0px;
+	padding:0;
+}
+.footer {
+	width: 100%;
+	height: 58 px;
+	background-color: #1e73be;
+	position: static;
+}
+#plezierlogo {
+	width: 65px;
+	padding: 10px;
+	margin-left: 10px;
+}
+.navbar{
+	position: relative;
+	display: inline-block;
+	float: right;
+	width: auto;
+	background-color: #1e73be;
+  margin-top: 20px;
+	margin-right: 110px;
+}
+li {
+    display: inline-block;
+}
+li a {
+    display: inline-block;
+    padding: 8px;
+    background-color: #1e73be;
+		text-decoration: none;
+		font-family: Verdana;
+		font-size: 15px;
+		color: white;
+		padding: 20px;
+}
+	/* Dropdown Button */
+.dropbtn {
+    background-color: #1e73be;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+		margin: 22px 20px 0 0 ;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+		float: right;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: white}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #348cbb;
+}
+#spelersballen {
+	float: left;
+	display: inline;
+	width: 40%;
+}
+/*slider comes in here*/
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+#slider { overflow: hidden; z-index: 1}
+#slider figure img {
+	width: 20%;
+	float: left;
+	height: 350px;
+}
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 15s slidy infinite;
+}
