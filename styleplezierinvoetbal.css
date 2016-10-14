@@ -73,7 +73,9 @@ li a {
     font-size: 16px;
     border: none;
     cursor: pointer;
-		margin: 22px 20px 0 0 ;
+		margin: 22px 20px 0 0;
+		z-index: 99;
+
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -90,6 +92,7 @@ li a {
     background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 100;
 }
 
 /* Links inside the dropdown */
@@ -130,11 +133,12 @@ li a {
 100% { left: -400%; }
 }
 
-#slider { overflow: hidden; z-index: 1}
+#slider { overflow: hidden; position: :absolute; z-index: -100;}
 #slider figure img {
 	width: 20%;
 	float: left;
 	height: 350px;
+	z-index: -100;
 }
 #slider figure {
   position: relative;
@@ -144,4 +148,5 @@ li a {
   text-align: left;
   font-size: 0;
   animation: 15s slidy infinite;
+	z-index: -100;
 }
